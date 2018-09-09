@@ -30,4 +30,4 @@ __Results__
 The following chart shows the estimated best policy that the agent produces given 500,000 hands of blackjack.
 
 ![Alt text]
-(https://github.com/Shawn-Ricardo/Reinforcement-Learning/blob/master/OpenAI-Gym-Blackjack/image/policy.png)
+(./image/policy.png?raw=true "title")
