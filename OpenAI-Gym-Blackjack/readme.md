@@ -25,3 +25,7 @@ As such, the use of a variable *epsilon* is used to favor exploration over explo
 
 View the function *get_probs()* in the Python Notebook for a deeper explanation.
 
+__Results__
+
+The following chart shows the estimated best policy that the agent produces given 500,000 hands of blackjack.
+
