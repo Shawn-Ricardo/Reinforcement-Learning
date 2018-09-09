@@ -11,6 +11,15 @@ For example, if an agent's state is ([16, 5, False]) and the action is 1 = hit, 
 
 It is the goal of an agent to maximize its reward - to win as many hands of Blackjack as possible. As such, the Q-Table aids the agent in choosing the action that is expected to lead to the largest reward. 
 
-__Method__
+__Method: Greedy Policy Update__
 
+A *policy* is the force guiding an agent's actions. A an example of a deterministic policy for Blackjack is a policy where the agent always hits when its sum is less than or equal to 16, and sticks otherwise. An example of a stoichastic policy is one where the agents hits with a probability of 0.8 when the sum is less than or equal to 16 and sticks with a probability of 80% when the sum is greater than 16.
+
+After every hand of Blackjack, which is called an *episode*, the agent updates the expected reward for a given State/Action pair in the Q-Table based on the results of the hand. In this program, the Q-Table is updated greedily, such that State/Action pairs that generate a larger expected reward are favored more by the agent. 
+
+__Exploitation vs Exploration__
+
+Having a purely greedy approach to updating the Q-Table could lead the agent to only explore an environment space that it naively believes produces the largest reward. For example, suppose that "route A" produces an immediate reward than "route B". However, "route B" ultimately leads to the best policy and a maximized reward. A truly greedy approach would never explore "route B". 
+
+As such, the use of a variable *epsilon* is used to favor exploration over exploitation early on in the agents training. As the number of episodes increases, the agent's understanding of the environment increases as well. When at a sufficiently large episode count, the agent should rely on its understanding of the environment, i.e., its Q-Table, to chose its next action.
 
