@@ -23,3 +23,5 @@ Having a purely greedy approach to updating the Q-Table could lead the agent to 
 
 As such, the use of a variable *epsilon* is used to favor exploration over exploitation early on in the agents training. As the number of episodes increases, the agent's understanding of the environment increases as well. When at a sufficiently large episode count, the agent should rely on its understanding of the environment, i.e., its Q-Table, to chose its next action.
 
+View the function *get_probs()* in the Python Notebook for a deeper explanation.
+
