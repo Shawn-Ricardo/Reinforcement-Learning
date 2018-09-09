@@ -30,4 +30,4 @@ __Results__
 The following chart shows the estimated best policy that the agent produces given 500,000 hands of blackjack.
 
 ![Image of Blackjack Policy]
-(images/policy.png)
+(image/policy.png)
