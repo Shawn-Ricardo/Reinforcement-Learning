@@ -30,3 +30,6 @@ __Results__
 The following chart shows the estimated best policy that the agent produces given 500,000 hands of blackjack.
 
 ![Alt text](image/policy.png)
+
+****
+Note: This program is based off the paper, Optimal-Policy and State-Value Function in Blackjack (Sutton and Barto, 2017)
