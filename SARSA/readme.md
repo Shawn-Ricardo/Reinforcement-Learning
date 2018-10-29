@@ -53,3 +53,28 @@ Thus, the expected reward for (State_1, action "right") is 6.2 from 6.
 
 Note: the value "0.1" is the *alpha* hyperparameter. It is set by the user and is a measure of the degree to which the new data affects the existing Q-Table value. If alpha is closer to 1, the new data is more heavily represented in the Q-Table. Conversely, if alpha is closer to 0, the new value more closely resembles the existing Q-Table entry.
 
+
+__Expected SARSA__
+
+
+Expected SARSA differs from SARSA and Q-Learning in the *expected reward* parameter. The expected return at a given state, say (s1), is obtained by calculating the expected value of the reward for that state, given by the following set up equations:
+
+![Alt text](images/epsilon_greedy_formular.PNG)
+
+where epsilon is a hyperparameter. Suppose the robot is in State_1 and chooses action "right" with a reward of -1 and finds itself in State_2. The Q-Table for (State_1, action "right") can be updated by plugging in the expected reward from of any action into the following equation:
+
+
+![Alt text](images/expected_sarsa.PNG)
+
+
+So, given the Q-Table above and the epsilon-greedy set of equations, the expected reward from State_2 would be (given epsilon = 0.4):
+
+   - for the maximum reward action, 1 - epsilon + epsilon / num_of_states --> 1 - 0.4 + 0.4/4 --> 0.7
+   - for every other action, epsilon / num_of_states --> 0.1
+   - total: (0.1 * 8) + (0.1 * 7) + (0.7 * 9) + (0.1 * 8) --> 8.6
+   - 8.6 is expected return of this State_2
+ 
+Plugging the expected return into the equation from above, the updated Q-Table entry for (State_1, action "right") is
+
+6 + 0.1(-1 + 8.6 - 6) = 6.12
+
