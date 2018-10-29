@@ -32,4 +32,4 @@ The following chart shows the estimated best policy that the agent produces give
 ![Alt text](image/policy.png)
 
 ****
-Note: This program is based off the paper, "Optimal-Policy and State-Value Function in Blackjack, 2017" by Sutton and Barto
+Note: This program is based off, "Optimal-Policy and State-Value Function in Blackjack, 2017" by Sutton and Barto
