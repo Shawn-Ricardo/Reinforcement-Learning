@@ -25,7 +25,7 @@ The agent chooses action "right" again in State-2.
 
 Using the table and SARSA pseudocode, the (s0,a0) entry in the Q-Table can be updated as follows:
 
-6 + 0.1(-1 + 8 -6) = 6.1
+6 + 0.1(-1 + 8 -6) = __6.1__
 
 At this point, we have updated the Q-Table by using our current knowledge of the environment and the immediate reward that was received. 
 
@@ -47,7 +47,7 @@ In Q-Learning, the agent always chooses the action that results in the greatest 
 
 At this point, the agent updates it's Q-Table:
 
-6 + 0.1(-1 + 9 - 6) = 6.2
+6 + 0.1(-1 + 9 - 6) = __6.2__
 
 Thus, the expected reward for (State_1, action "right") is 6.2 from 6. 
 
@@ -59,7 +59,7 @@ __Expected SARSA__
 
 Expected SARSA differs from SARSA and Q-Learning in the *expected reward* parameter. The expected return at a given state, say (s1), is obtained by calculating the expected value of the reward for that state, given by the following set up equations:
 
-![Alt text](images/epsilon_greedy_formular.PNG)
+![Alt text](images/epsilon_greedy_formula.PNG)
 
 where epsilon is a hyperparameter. Suppose the robot is in State_1 and chooses action "right" with a reward of -1 and finds itself in State_2. The Q-Table for (State_1, action "right") can be updated by plugging in the expected reward from of any action into the following equation:
 
@@ -76,5 +76,5 @@ So, given the Q-Table above and the epsilon-greedy set of equations, the expecte
  
 Plugging the expected return into the equation from above, the updated Q-Table entry for (State_1, action "right") is
 
-6 + 0.1(-1 + 8.6 - 6) = 6.12
+6 + 0.1(-1 + 8.6 - 6) = __6.12__
 
