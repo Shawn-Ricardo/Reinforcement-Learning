@@ -1,6 +1,4 @@
-                                                    __Temporal Difference Methods__
-
-__SARSA - State, Action, Reward, Next State, Next Action__
+__Temporal Difference Methods: SARSA - State, Action, Reward, Next State, Next Action__
 
 
 SARSA is an approach that allows updating of the Q-Table without the need to complete an episode. This type of learning is valuable for real-world examples where discrete lines between active-state and end-state are not present or are fuzzy.
