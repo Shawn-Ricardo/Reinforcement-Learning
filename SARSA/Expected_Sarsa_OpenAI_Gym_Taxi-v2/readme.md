@@ -19,3 +19,6 @@ train a taxi agent to go to the passenger pickup location, pickup the passenger,
 
 The agent receives a reward of -1 for each action and a reward of +20 for successfully delivering the passenger. If the taxi attempts to execute the Putdown or Pickup actions illegally, then a reward of -10 is given. In addition, an action causing a collision is deemed a no-op and given the usual reward of -1.
 
+OpenAI Gym considers this task "solved" when the best average reward is greater than or equal to 9.7 after 100 consecutive trials (where each trial is 20,000 episodes).
+
+With a few minutes spent adusting hyperparameters, I obtained an average best reward of 9.236 over 100 consecutive trials. 
