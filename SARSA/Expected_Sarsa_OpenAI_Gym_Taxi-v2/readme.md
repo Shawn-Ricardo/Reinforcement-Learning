@@ -2,7 +2,7 @@ Use Expected SARSA to teach a taxi agent to navigate a small gridworld.
 
 ![Alt text](images/taxi_domain.png)
 
-Begin with a 5-by-5 grid world inhabited by a taxi agent. In this grid, world, there are 4 special cells marked R, B, G, and Y that correspond to pickup locations of a passenger.
+Begin with a 5-by-5 grid world inhabited by a taxi agent. In this grid world, there are 4 special cells marked R, B, G, and Y that correspond to pickup/drop-off locations of a passenger.
 
 Upon initialization, the taxi begins at a randomly selected cell. Likewise, the pickup/drop-off locations of the passenger are chosen at random from [R,B,G,Y]. 
 
