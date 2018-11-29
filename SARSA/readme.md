@@ -1,3 +1,5 @@
+**Note:** This work follows OpenAI Gym's Blackjack environment
+
 __Temporal Difference Methods: SARSA - State, Action, Reward, Next State, Next Action__
 
 
