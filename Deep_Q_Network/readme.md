@@ -11,3 +11,5 @@ In fact, the paper ["Human Level Control Through Deep Reinforcement Learning"](h
 Mnih, Volodymyr, et al. fuse a Deep Neural Network into the Q-Learning approach discussed elsewhere in this Github and produced a agent capable of playing 50 Atari videogames better than its human counter-part. 
 
 The following notebook, inspired by the above paper, implements a Deep Q-Network on OpenAI Gym's Lunar Lander, which successfully trains an agent to land the space ship within the desired goal region.
+
+![](agent_test.gif)
