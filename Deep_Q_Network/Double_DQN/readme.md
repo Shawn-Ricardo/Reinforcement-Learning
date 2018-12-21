@@ -35,6 +35,15 @@ The same next state s' is inputted into the offline network to produce a vector 
 
 By decoupling the action selection from the action evaluation, the authors were able to drive down overestimation significantly. Leading to faster learning times, more accurate value estimates, and overall higher quality policies. 
 
+The updated TD Target equation now becomes: 
+
+
+
+![Alt text](images/new_td_target.PNG)
+
+
+
+
 The following graph showcases the learning of an agent on OpenAI Gym's Lunar Lander environment using the standard DQN found in this GitHub. Notice the fluctuations in average score for the DQN and how it took significantly long to train.
 
 
