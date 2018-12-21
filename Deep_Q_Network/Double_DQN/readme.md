@@ -62,7 +62,7 @@ The following graph showcases the learning of an agent on the same Lunar Lander 
  
 
 
-The following is the Double DQN agent in action landing the Lundar Rover safely within the goal region!
+The following is the Double DQN agent in action landing the Lundar Rover safely within the goal region! The notebook in this directory will implement the DDQN and explain the steps in detail using PyTorch. The only change occurs in the learn() function of the Agent class. 
 
 
 ![](images/lunar_lander_ddqn.gif)
