@@ -25,6 +25,14 @@ In order to address overestimation of Q-Learning, Hasselt, at el. decomposed the
 
 In this approach, the max operator uses the same values both to select and to evaluate an action, which makes it more likely to select overestimated values, resulting in overoptimistic value estimates. 
 
+The authors propose that the selection of the action to perform (a') that has the maximum expected q-value is to be obtained through the online network. That is, given a next state s', the online network will produce a vector corresponding to the q-values of each action in the action space. The action with the maximum q-value is chosen.
+
+The same next state s' is inputted into the offline network to produce a vector of estimated q-values for each action. Using the next action a' produced by the online network, the corresponding q-value is chosen in the vector produced by the offline network. The following equation encompasses this:
+
+
+![Alt text](images/new_td_error.PNG)
+
+
 By decoupling the action selection from the action evaluation, the authors were able to drive down overestimation significantly. Leading to faster learning times, more accurate value estimates, and overall higher quality policies. 
 
 The following graph showcases the learning of an agent on OpenAI Gym's Lunar Lander environment using the standard DQN found in this GitHub. Notice the fluctuations in average score for the DQN and how it took significantly long to train.
