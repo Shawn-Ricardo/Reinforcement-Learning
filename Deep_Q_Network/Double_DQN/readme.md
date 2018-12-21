@@ -39,7 +39,9 @@ The updated TD Target equation now becomes:
 
 
 
+
 ![Alt text](images/new_td_target.PNG)
+
 
 
 
@@ -47,16 +49,21 @@ The updated TD Target equation now becomes:
 The following graph showcases the learning of an agent on OpenAI Gym's Lunar Lander environment using the standard DQN found in this GitHub. Notice the fluctuations in average score for the DQN and how it took significantly long to train.
 
 
+
 ![Alt text](images/dqn_training.png)
+
 
 
 The following graph showcases the learning of an agent on the same Lunar Lander Environment, but using a Double DQN. Notice how much faster the training has occured and the reduced fluctuations in average score. From a qualitative perspective, the GIF of the Lundar Lander for Double DQN performs considerably better than the standard DQN.
 
 
+
  ![Alt text](images/ddqn_training_graph.png)
  
- 
- asdf
+
+
+The following is the Double DQN agent in action landing the Lundar Rover safely within the goal region!
+
 
 ![](images/lunar_lander_ddqn.gif)
 
