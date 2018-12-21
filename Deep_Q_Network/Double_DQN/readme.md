@@ -29,7 +29,7 @@ By decoupling the action selection from the action evaluation, the authors were 
 
 The following graph showcases the learning of an agent on OpenAI Gym's Lunar Lander environment. The graph on the left is the standard DQN network found in this GitHub. The graph on the right is the Double DQN network. Notice the fluctuations in average score for DQN and how the standard DQN took significantly longer to train. Qualitatively, the GIF of the Lundar Lander for Double DQN performs considerably better than the standard DQN.
 
-![Alt text](images/atari_graph.PNG)       ![Alt text](images/atari_graph.PNG)
+![Alt text](images/dqn_training.png) ![Alt text](images/ddqn_training_graph.png)
 
 
 
