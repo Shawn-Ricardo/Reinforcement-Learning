@@ -27,10 +27,15 @@ In this approach, the max operator uses the same values both to select and to ev
 
 By decoupling the action selection from the action evaluation, the authors were able to drive down overestimation significantly. Leading to faster learning times, more accurate value estimates, and overall higher quality policies. 
 
-The following graph showcases the learning of an agent on OpenAI Gym's Lunar Lander environment. The graph on the left is the standard DQN network found in this GitHub. The graph on the right is the Double DQN network. Notice the fluctuations in average score for DQN and how the standard DQN took significantly longer to train. Qualitatively, the GIF of the Lundar Lander for Double DQN performs considerably better than the standard DQN.
+The following graph showcases the learning of an agent on OpenAI Gym's Lunar Lander environment using the standard DQN found in this GitHub. The graph on the right is the Double DQN network. 
+
 
 ![Alt text](images/dqn_training.png) ![Alt text](images/ddqn_training_graph.png)
 
 
+The following graph showcases the learning of an agent on the same Lunar Lander Environment, but using a Double DQN. Notice the fluctuations in average score for DQN and how the standard DQN took significantly longer to train. Qualitatively, the GIF of the Lundar Lander for Double DQN performs considerably better than the standard DQN.
+
 
 ![](images/lunar_lander_ddqn.gif)
+
+
