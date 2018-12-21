@@ -10,7 +10,9 @@ Due to Q-Learning including a maximization step over estimated action values, it
 The following graph showcases the degree to which overestimation is possible when Q-Learning is applied to function approximation of a continuous state with 10 discrete actions in each state. 
 
 
-![Alt text](images/dqn_overestimation.PNG)
+![Alt text](images/dqn_overestimation.png)
+
+
 
 
 
