@@ -1,1 +1,1 @@
-asdf
+![](images/trimmed.gif)
