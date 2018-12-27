@@ -12,4 +12,22 @@ The algorithm is implemented as follows:
 
 ![](images/per_algorithm.PNG)
 
+It is important to note that when prioritization is introduced in this manner, the underlying distribution from which transitions are sampled is changed. Also, experiences with the largest TD error may starve out experiences with smaller errors closer to 0. The former issue affects gradient descent, as the estimation of the expected value with stochastic updates relies on those updates corresponding to the same distribution as its expectation. The latter issue affects diversity, as experiences with larger TD errors will be seen more and may make the system prone to overfitting.
 
+To address the lack of diveristy inherent in TD-error based bias, Schaul, et al. introduced stochastic sampling that interpolates between pure greedy prioritization and uniform random sampling. The probability of sampling transition i is:
+
+![](images/pi_formula.PNG)
+
+The exponent is a hyperparameter that determines how much prioritization is used, with alpha = 0 corresponding to the uniform case. 
+
+To correct non-uniform probabilities introduced by prioritization, Schaul et al. applied Important Sampling weights. These weights are folded into the Q-Learning updated by multiplying these weights by the TD error prior to gradient descent. The IS weight for a particular instance is given as:
+
+![](images/is_weights.PNG)
+
+where N is the batch size and P(i) is the probability of transitions for the particular transitions. Beta is a hyperparamter that is annealed over time and is used to control the degree to which bias-correction is applied. Schaul, et al. anneal this value to 1 over time, where values come closer to 1 toward the end of training. 
+
+The following video showcases an agent implementing a Double Deep Q-Network with Prioritized Experience Replay in order to collect yellow bananas and avoid blue. The environment is [Unity Machine Learning Environment](https://unity3d.com/machine-learning) that allows for high-fidelity simulations. Agents can be trained on images of the simualtion, which is very useful to the field of robotics, as well as obtain vectors of the state (as in this approach).
+
+Please view the corresponding jupyter notebook for a more in-depth explaination of the algorithm. 
+
+![](images/banana_collection.gif)
