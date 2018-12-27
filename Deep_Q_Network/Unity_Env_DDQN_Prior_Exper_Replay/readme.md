@@ -20,14 +20,14 @@ To address the lack of diveristy inherent in TD-error based bias, Schaul, et al.
 
 The exponent is a hyperparameter that determines how much prioritization is used, with alpha = 0 corresponding to the uniform case. 
 
-To correct non-uniform probabilities introduced by prioritization, Schaul et al. applied Important Sampling weights. These weights are folded into the Q-Learning updated by multiplying these weights by the TD error prior to gradient descent. The IS weight for a particular instance is given as:
+To correct non-uniform probabilities introduced by prioritization, Schaul et al. applied Importance Sampling weights. These weights are folded into the Q-Learning update by multiplying these weights by the TD error prior to gradient descent. The IS weight for a particular transition is given as:
 
 ![](images/is_weights.PNG)
 
-where N is the batch size and P(i) is the probability of transitions for the particular transitions. Beta is a hyperparamter that is annealed over time and is used to control the degree to which bias-correction is applied. Schaul, et al. anneal this value to 1 over time, where values come closer to 1 toward the end of training. 
+where N is the batch size and P(i) is the probability of transition for the particular experience (that is, state-action-reward-next_state-done tuple). Beta is a hyperparamter that is annealed over time to a value of 1 and is used to control the degree to which bias-correction is applied.  
 
-The following video showcases an agent implementing a Double Deep Q-Network with Prioritized Experience Replay in order to collect yellow bananas and avoid blue. The environment is [Unity Machine Learning Environment](https://unity3d.com/machine-learning) that allows for high-fidelity simulations. Agents can be trained on images of the simualtion, which is very useful to the field of robotics, as well as obtain vectors of the state (as in this approach).
+The following video showcases an agent implementing a Double Deep Q-Network with Prioritized Experience Replay in order to collect yellow bananas and avoid blue bananas. The environment is within the [Unity Machine Learning Environment](https://unity3d.com/machine-learning), which allows for high-fidelity simulations. Agents can be trained on images of the simulation, which is very useful to the field of robotics, as well as obtain vectors of the state (as in this approach).
 
-Please view the corresponding jupyter notebook for a more in-depth explaination of the algorithm. 
+Please view the corresponding jupyter notebook for a more in-depth explanation of the algorithm. 
 
 ![](images/banana_collection.gif)
