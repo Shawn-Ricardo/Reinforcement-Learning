@@ -1,1 +1,1 @@
-![](images/trimmed.gif)
+![](images/trimmed.mp4)
