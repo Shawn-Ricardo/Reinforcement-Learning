@@ -4,8 +4,12 @@ The algorithm is an improvement over the method implemented in the Deep Q-Networ
 
 Schaul, et al. prioritized transitions according to TD error, which is the difference between the target TD value and the current TD value predicted by the network. The reasoning behind such a method is that transitions with a greater error implied a more significant potential for learning than transitions with a lower TD error. This claim is substantiated by numerous neurological studies, where experiences with significant TD errors appear to be replayed more often in the hippocampus of rodents.
 
-The following graph shows
+The following graph shows a DQN with Prioritized Experience Replay (two types of implementations) outperforming a DQN with uniform experience sampling on the Atari 2600 benchmark. The dashed lines indicate the point at which the agents performing on par with human players.
 
 ![](images/per_results.PNG)
+
+The algorithm is implemented as follows:
+
+![](images/per_algorithm.PNG)
 
 
