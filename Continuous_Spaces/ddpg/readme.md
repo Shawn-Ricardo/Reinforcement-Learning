@@ -17,7 +17,11 @@ As it turns out, we can use a neural network to directly approximation the polic
 In order to reduce the variance of the system, an actor-critic approach is implemented. The critic will use a neural network to obtain TD estimates and construct a baseline. This baseline will be used to evaluate the decisions of the actor - that is, the network populating the policy function.
 
 <p align="center">
-![Alt text](images/actor_critic_structure.png)
+  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
+</p>
+
+<p align="center">
+  <img width="460" height="300" src="images/actor_critic_structure.png">
 </p>
 
 Such a TD estimation method has much lower variance than policy based methods, but a higher bias. This is to say, that bias is being introduced into the system; expected TD rewards (a guess, in the most high-level sense) will be biased due to a lack of experience early on and either be over-estimates or under-estimates. Regardless, these estimates will maintain their value throughout several time steps - again, low variance and high bias).
