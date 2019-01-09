@@ -17,21 +17,30 @@ As it turns out, we can use a neural network to directly approximation the polic
 In order to reduce the variance of the system, an actor-critic approach is implemented. The critic will use a neural network to obtain TD estimates and construct a baseline. This baseline will be used to evaluate the decisions of the actor - that is, the network populating the policy function.
 
 
+
 <p align="center">
   <img width="460" height="300" src="images/actor_critic_structure.png">
 </p>
+
+
 
 Such a TD estimation method has much lower variance than policy based methods, but a higher bias. This is to say, that bias is being introduced into the system; expected TD rewards (a guess, in the most high-level sense) will be biased due to a lack of experience early on and either be over-estimates or under-estimates. Regardless, these estimates will maintain their value throughout several time steps - again, low variance and high bias).
 
 It has been shown that even though bias is introduced into the system, the presence of both an actor and critic (i.e., state-value estimation and policy estimation) produce an agent that learns a higher quality policy faster than either method alone. 
 
+
 <p align="center">
+  <b> </b>
+  <b> </b>
   <b>DDPG Divergence</b>
+  <b> </b>
+  <b> </b>
 </p>
 
 
-
-![Alt text](images/ddpg_visual.PNG)
+<p align="center">
+  <img width="460" height="300" src="images/ddpg_visual.PNG">
+</p>
 
 
 DDPG diverges from the traditional Actor-Critic architecture discussed above in that the critic is not populating a baseline, but rather the 
