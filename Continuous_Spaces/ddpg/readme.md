@@ -59,3 +59,7 @@ A reward of +0.1 is provided for each step that the agent's hand is in the goal 
 The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every entry in the action vector is a number between -1 and 1.
 
 The following video showcases the agents ability to learn through successive episodes and, ultimately, position the joint at the target location for an extended period of time.
+
+<video width="320" height="240" controls>
+  <source src="images/continuous_control_single_agent.mp4" type="video/mp4">
+</video>
