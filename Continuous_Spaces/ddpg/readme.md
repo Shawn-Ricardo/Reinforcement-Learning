@@ -33,11 +33,7 @@ It has been shown that even though bias is introduced into the system, the prese
 
 
 <p align="center">
-  <b> </b>
-  <b> </b>
   <b>DDPG Divergence</b>
-  <b> </b>
-  <b> </b>
 </p>
 
 
@@ -46,4 +42,13 @@ It has been shown that even though bias is introduced into the system, the prese
 </p>
 
 
-DDPG diverges from the traditional Actor-Critic architecture discussed above in that the critic is not populating a baseline, but rather the 
+DDPG diverges from the traditional Actor-Critic architecture discussed above in that the actor is not populating a distribution of action probabilities (a stochastic policy) and the critic is not populating a baseline. Rather, the actor (neural network on the left) seeks to learn the single action that maximizes expected reward for a given state; this is a deterministic policy. 
+
+Likewise, the critic (neural network on the right)  uses this action to estimate the optimal action-value function using the actors best guess. This implementation is described in the algorithm above and is very reminiscent of the implementation in a Deep Q-Network.
+
+
+<p align="center">
+  <b>Results</b>
+</p>
+
+
