@@ -5,8 +5,7 @@ The algorithm is as follows:
 ![Alt text](images/ddpg_algo.PNG)
 
 
-<p align="center">
-  <font size="100">
+<p align="center" font="20">
   <b>Actor Critic</b>
 </p>
 
