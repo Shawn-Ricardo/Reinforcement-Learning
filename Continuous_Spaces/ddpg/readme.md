@@ -62,5 +62,5 @@ The following video showcases the agents ability to learn through successive epi
 
 
 <p align="center">
-    <img src="images/continuous_control_single_agent.gif" width="460" height="460" />
+    <img src="images/continous_control_single_agent.gif" />
  </p>
