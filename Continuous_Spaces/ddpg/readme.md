@@ -5,9 +5,9 @@ The algorithm is as follows:
 ![Alt text](images/ddpg_algo.PNG)
 
 
-<p align="center">
- <b>Actor Critic</b>
-</p>
+## <p align="center">
+   <b>Actor Critic</b>
+   </p>
 
 
 For other reinforcement learning algorithms in this github (SARSA, DQN, Discretization), the goal of the agent was to populate a Q-Table (please refer to these algorithms for an explanation). From this state-action -> value table, the optimal policy (state -> action) could be derived. That is, given a state S, the agent should take action A in order to maximize expected returns.
