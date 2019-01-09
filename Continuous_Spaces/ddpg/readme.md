@@ -46,9 +46,16 @@ DDPG diverges from the traditional Actor-Critic architecture discussed above in 
 
 Likewise, the critic (neural network on the right)  uses this action to estimate the optimal action-value function using the actors best guess. This implementation is described in the algorithm above and is very reminiscent of the implementation in a Deep Q-Network.
 
+In addition, the authors employ target networks for both the actor and critic. Stating that the absense of these target networks resulted in very poor performance in many environments. 
 
 <p align="center">
-  <b>Results</b>
+  <b>Application & Results</b>
 </p>
 
+The DDPG algorithm was used to train an agent to control a doubly-jointed arm. The goal of the agent is to apply torque to each joint in order to position the end of the arm within a target location in space. 
 
+A reward of +0.1 is provided for each step that the agent's hand is in the goal location. Thus, the goal of your agent is to maintain its position at the target location for as many time steps as possible.
+
+The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every entry in the action vector should be a number between -1 and 1.
+
+The following video showcases the agents ability to learn through successive episodes and, ultimately, position the joint at the target location. 
