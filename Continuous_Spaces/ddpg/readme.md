@@ -52,10 +52,10 @@ In addition, the authors employ target networks for both the actor and critic. S
   <b>Application & Results</b>
 </p>
 
-The DDPG algorithm was used to train an agent to control a doubly-jointed arm. The goal of the agent is to apply torque to each joint in order to position the end of the arm within a target location in space. 
+The DDPG algorithm was used to train an agent to control a doubly-jointed arm with a [Unity Machine-Learning Agent Environment](https://github.com/Unity-Technologies/ml-agents). The goal of the agent is to apply torque to each joint in order to position the end of the arm within a target location in space. 
 
-A reward of +0.1 is provided for each step that the agent's hand is in the goal location. Thus, the goal of your agent is to maintain its position at the target location for as many time steps as possible.
+A reward of +0.1 is provided for each step that the agent's hand is in the goal location. Thus, the goal of the agent is to maintain its position at the target location for as many time steps as possible.
 
-The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every entry in the action vector should be a number between -1 and 1.
+The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every entry in the action vector is a number between -1 and 1.
 
-The following video showcases the agents ability to learn through successive episodes and, ultimately, position the joint at the target location. 
+The following video showcases the agents ability to learn through successive episodes and, ultimately, position the joint at the target location for an extended period of time.
