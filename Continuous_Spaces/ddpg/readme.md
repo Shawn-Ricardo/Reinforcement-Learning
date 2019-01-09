@@ -39,7 +39,7 @@ It has been shown that even though bias is introduced into the system, the prese
 
 
 <p align="center">
-  <img width="460" height="300" src="images/ddpg_visual.PNG">
+  <img width="520" height="300" src="images/ddpg_visual.PNG">
 </p>
 
 
