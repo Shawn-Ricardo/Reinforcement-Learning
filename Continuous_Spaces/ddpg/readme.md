@@ -6,7 +6,7 @@ The algorithm is as follows:
 
 
 <p align="center">
-  <font size="20">
+  <font size="100">
   <b>Actor Critic</b>
 </p>
 
