@@ -60,6 +60,7 @@ The observation space consists of 33 variables corresponding to position, rotati
 
 The following video showcases the agents ability to learn through successive episodes and, ultimately, position the joint at the target location for an extended period of time.
 
+
 <p align="center">
-    <img src="images/continuous_control_single_agent.gif" width="40" height="40" />
+    <img src="images/continuous_control_single_agent.gif" width="460" height="460" />
  </p>
