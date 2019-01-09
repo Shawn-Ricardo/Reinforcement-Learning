@@ -20,6 +20,7 @@ In order to reduce the variance of the system, an actor-critic approach is imple
 
 <p align="center">
   <img width="460" height="300" src="images/actor_critic_structure.png">
+  <strong> basic actor-critic structure </strong>
 </p>
 
 
