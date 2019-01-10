@@ -58,7 +58,7 @@ A reward of +0.1 is provided for each step that the agent's hand is in the goal 
 
 The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every entry in the action vector is a number between -1 and 1.
 
-The environment is considered solved when the agent receives an average score of 30 over 100 consecutive episodes.
+The environment is considered solved when the agent receives an average score of 30 over 100 consecutive episodes. For a more detailed explanation of the environment, see the corresponding jupyter notebook.
 
 The following video showcases a successful agent positioning the joint at the target location for an extended period of time.
 
