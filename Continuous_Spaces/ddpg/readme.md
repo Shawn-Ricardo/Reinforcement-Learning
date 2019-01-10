@@ -60,7 +60,7 @@ The observation space consists of 33 variables corresponding to position, rotati
 
 The environment is considered solved when the agent receives an average score of 30 over 100 consecutive episodes.
 
-The following video showcases the agents ability to learn through successive episodes and, ultimately, position the joint at the target location for an extended period of time.
+The following video showcases a successful agent positioning the joint at the target location for an extended period of time.
 
 <p align="center">
     <img width="580" height="380" src="images/continous_control_single_agent.gif" />
