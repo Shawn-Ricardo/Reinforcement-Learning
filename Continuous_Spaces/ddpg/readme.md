@@ -62,7 +62,6 @@ The environment is considered solved when the agent receives an average score of
 
 The following video showcases the agents ability to learn through successive episodes and, ultimately, position the joint at the target location for an extended period of time.
 
-
 <p align="center">
     <img width="580" height="380" src="images/continous_control_single_agent.gif" />
  </p>
