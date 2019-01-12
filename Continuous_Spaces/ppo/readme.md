@@ -73,12 +73,11 @@ In practice, the authors state how choosing a *beta* value that generalizes well
 
 In essence, clipping the objective function limits the probability ratio, *r (which is the current policy divided by the older policy)*, between (1-epsilon, 1+epsilon), where epsilon is a hyperparameter. By doing so, the policy avoids excessively large updates and mimics the behavior seen in TRPO's objective function.
 
-The following is a graphical representation of the constrained values of the probability ratio,
-
 <p align="center">
 <img src="images/ppo_bounded.png" width="620" height="180">
 </p>
 
+The above is a graphical representation of the constrained values of the probability ratio. Notice how the the ratio *r* is limited on how much it can reflect changes between policies. This limitation introduces a pessimistic bound on objective. 
 
 ### <p align="center"><b><i>Final Objective Function</i></b></p>
 
