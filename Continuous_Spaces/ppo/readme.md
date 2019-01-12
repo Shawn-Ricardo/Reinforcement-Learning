@@ -1,6 +1,6 @@
 # <p align="center"><b>Proximal Proxy Optimization</b></p>
 
-In 2017, Schulman, et al., introduced PPO as a policy gradient algorithm that is scalable, robust, and data efficient. Using Trust Region Policy Optimization (TRPO) as inspiration, the authors designed PPO to be simplier to implement and better at generalization, all the while outperforming TRPO, DQN, and other "vanilla" policy gradient methods.
+In 2017, Schulman, et al., introduced [PPO](https://arxiv.org/pdf/1707.06347.pdf) as a policy gradient algorithm that is scalable, robust, and data efficient. Using Trust Region Policy Optimization (TRPO) as inspiration, the authors designed PPO to be simplier to implement and better at generalization, all the while outperforming TRPO, DQN, and other "vanilla" policy gradient methods.
 
 <p align="center">
 <img src="images/ppo_performance.PNG" >
@@ -76,7 +76,7 @@ In essence, clipping the objective function limits the probability ratio, *r (wh
 The following is a graphical representation of the constrained values of the probability ratio,
 
 <p align="center">
-<img src="images/ppo_bounded.png" >
+<img src="images/ppo_bounded.png" width="520" height="260">
 </p>
 
 
