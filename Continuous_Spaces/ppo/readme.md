@@ -54,7 +54,7 @@ Note that the calculation of the weighted sum of rewards has no bias because the
 PPO draws inspiration from Trust Region Policy Optimization (TRPO) which, in short, ensures that a new policy does not *move* too far away from the old policy. The objective function used in TRPO is as follows,
 
 <p align="center">
-<img src="images/trpo_obj_fn.PNG" width="580" height="120">
+<img src="images/trpo_obj_fn.PNG" width="620" height="120">
 </p>
 
 The ratio of action policies is a measure of the likeliness of a certain actions between the current policy and an older policy. *NOTE: The capability of using distribution A to drawn values from distribution B is known as Importance Sampling, as is implemented by TRPO to obtain this ratio*. A ratio greater than 1 indicates that the action is more probable under the newer policy and vice versa.
