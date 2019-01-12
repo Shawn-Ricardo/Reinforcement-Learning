@@ -27,7 +27,7 @@ The paper begins by discussing a common gradient estimator and it's correspondin
 This formula corresponds to equation (2). It is defined as the expectation over the log of the stochastic action policy multiplied by an *estimate* of the advantage function, A_hat. The goal, then, is to perform stochastic gradient ascent using this loss function which causes the agent to learn. 
 
 
-## <p align="center"><b><i>PPO Actor Critic</i></b></p>
+### <p align="center"><b><i>PPO Actor Critic</i></b></p>
 
 PPO implements an actor-critic method to populate the terms in the objective function. 
 
