@@ -85,4 +85,10 @@ The above is a graphical representation of the constrained values of the probabi
 <img src="images/ppo_final_obj_fn.PNG">
 </p>
 
+The authors use a neural network architecture that shares parameters between the policy and value function estimators - that is, a significant amount of parameters are shared between the actor and critic. As such, they are a part of the same computation graph, which allows the authors to use an objective function that combines the policy surrogate loss and value function loss.
+
+The second term, L^VF, in the objective function is the value function loss, which updates the critic network. This term is obtained by evaluated the squared-error loss, (V(s) - Vtarget)^2.
+
+The third term is an entropy term that ensures the agent sufficient explores the environment during training. 
+
 
