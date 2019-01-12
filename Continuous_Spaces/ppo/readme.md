@@ -40,7 +40,7 @@ The critic is used to estimate the value function, V(s) and is a neural network 
 The advantage function (A_hat) in the equation above is the difference between a *weighted* sum of all the rewards an agent receives during each timestep of an episode (known as "discounted rewards") and the *estimate* of the reward that the agent is most likely to receive from its current state forward (that is, the critic's output).
 
 <p align="center">
-<img src="images/discount_reward.PNG" width="170" height="170">
+<img src="images/discount_reward.PNG" width="150" height="150">
 </p>
 
 <body>
@@ -49,14 +49,11 @@ The advantage function (A_hat) in the equation above is the difference between a
 </p>
 </body>
 
-Since PPO is an online-policy that collects trajectories for some arbitrary period, the weighted rewards can be computed immediately after bootstrapping. In fact, this can be seen in the algorithm for PPO shown above. 
+Since PPO is an online-policy that collects trajectories for some arbitrary period, the weighted rewards can be computed immediately after bootstrapping. In fact, this can be seen in the algorithm for PPO shown above, stated as "Compute Advantage Estimates".
+
+Thus, to calculate the advantage estimate, compute the weighted sum of rewards minus the baseline estimate. 
 
 
-
-
-If you are unfamiliar with the actor-critic architecture, please view the notebook on Deep Deterministic Policy Gradient elsewhere in this github.
-
-Please refer to the code for a detailed explanation. 
 
 
 
