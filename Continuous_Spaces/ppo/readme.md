@@ -54,7 +54,7 @@ Note that the calculation of the weighted sum of rewards has no bias because the
 PPO draws inspiration from Trust Region Policy Optimization (TRPO) which, in short, ensures that a new policy does not *move* too far away from the old policy. The objective function used in TRPO is as follows,
 
 <p align="center">
-<img src="images/trpo_obj_fn.PNG" width="120" height="120">
+<img src="images/trpo_obj_fn.PNG" width="320" height="120">
 </p>
 
 
