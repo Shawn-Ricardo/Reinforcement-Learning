@@ -89,6 +89,9 @@ The authors use a neural network architecture that shares parameters between the
 
 The second term, L^VF, in the objective function is the value function loss, which updates the critic network. This term is obtained by evaluated the squared-error loss, (V(s) - Vtarget)^2.
 
-The third term is an entropy term that ensures the agent sufficient explores the environment during training. 
+c1 and c2 are hyperparameters that where set to 1 and 0.01 by the authors.
+
+The third term introduces an entropy bonus into the system that ensures the agent sufficient explores the environment during training. Recall that the PPO actor outputs a Gaussian distribution for each action in the action space that the agent then samples. Entropy deals with probability distributions and is a measure of the unpredictablility of a distribution. By maximizing entropy, the authors maximize the spread of an action distribution, resulting in that action taking on a larger range of possible values - thus, exploration occurs.
 
 
+### <p align="center"><b><i>Application & Results</i></b></p>
