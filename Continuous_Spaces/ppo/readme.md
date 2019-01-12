@@ -15,7 +15,7 @@ If you are unfamiliar with a DQN and/or Replay Buffer, please view my detailed e
 The highlighted region of the PPO algorithm showcases this bootstrapping...
 
 <p align="center">
-<img src="images/ppo_bootstrap.PNG" width="520" height="240">
+<img src="images/ppo_bootstrap.PNG" width="580" height="220">
 </p>
 
 The paper begins by discussing a common gradient estimator and it's corresponding objective function. The objective function is given as,
