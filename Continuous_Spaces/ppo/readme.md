@@ -57,6 +57,14 @@ PPO draws inspiration from Trust Region Policy Optimization (TRPO) which, in sho
 <img src="images/trpo_obj_fn.PNG" width="580" height="120">
 </p>
 
+The ratio of action policies is a measure of the likeliness of a certain actions between the current policy and an older policy. *NOTE: The capability of using distribution A to drawn values from distribution B is known as Importance Sampling, as is implemented by TRPO to obtain this ratio*. A ratio greater than 1 indicates that the action is more probable under the newer policy and vice versa.
+
+If the advantage function estimate produces negative values, then the multiplication of these values with the policy ratio will influence the agent to avoid these action. Conversely, if the advantage function estimate produces positive values, then the multiplication of these values with the policy ratio will encourage such actions in the given state. 
+
+Such a concept is seen in the popular REINFORCE algorithm. 
+
+Lastly, TRPO utilizes a [KL constraint](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence) to ensure that the new policy does not move far away from the old policy. This concept addresses the propensity for large gradient steps to lead to instability in learning. Intuitively, 
+
 
 
 
