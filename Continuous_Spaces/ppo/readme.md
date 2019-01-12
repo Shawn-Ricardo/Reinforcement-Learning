@@ -40,12 +40,15 @@ The critic is used to estimate the value function, V(s) and is a neural network 
 The advantage function (A_hat) in the equation above is the difference between a *weighted* sum of all the rewards an agent receives during each timestep of an episode (known as "discounted rewards") and the *estimate* of the reward that the agent is most likely to receive from its current state forward (that is, the critic's output).
 
 <p align="center">
-<img src="images/discount_reward.PNG" >
+<img src="images/discount_reward.PNG" width="240" height="240">
 </p>
+
+<body>
 <p align="center">
-  <small> sum of weighted rewards </small>
+<small> sum of weighted rewards </small>
 </p>
-  
+</body>
+
 Since PPO is an online-policy that collects trajectories for some arbitrary period, the weighted rewards can be computed immediately after bootstrapping. In fact, this can be seen in the algorithm for PPO shown above. 
 
 
