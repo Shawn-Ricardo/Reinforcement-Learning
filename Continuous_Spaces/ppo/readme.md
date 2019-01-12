@@ -24,11 +24,37 @@ The paper begins by discussing a common gradient estimator and it's correspondin
 <img src="images/ppo_obj_fn.PNG" >
 </p>
 
-This formula corresponds to equation (2) in paper and defines it as the expectation over the log of the stochastic action policy multiplied by an *estimate* of the advantage function output, A_hat. 
+This formula corresponds to equation (2). It is defined as the expectation over the log of the stochastic action policy multiplied by an *estimate* of the advantage function, A_hat. The goal, then, is to perform stochastic gradient ascent using this loss function which causes the agent to learn. 
 
 
 <p align="center">
   <i>PPO Actor Critic</i>
 </p>
+
+PPO implements an actor-critic method to populate the terms in the objective function. 
+
+The actor is a neural network that takes as input the state of the environment and produces a Gaussian distribution for each action. In order to obtain a continous value for an action, the corresponding distribution is sampled. The actor is represented by the policy *pi* in the objective function above. 
+
+The critic is used to estimate the value function, V(s) and is a neural network tha has only one output. The value function is responsible for mapping a given state to a value that reflects how "good" it is for the agent to be in that state. More specifically, the critic *estimates* the reward that the agent is most likely to receive from it's current state forward - until the end of the epsiode. In actor-critic terminology, the critic acts as a *baseline*.
+
+The advantage function (A_hat) in the equation above is the difference between a *weighted* sum of all the rewards an agent receives during each timestep of an episode (known as "discounted rewards") and the *estimate* of the reward that the agent is most likely to receive from its current state forward (that is, the critic's output).
+
+<p align="center">
+<img src="images/discount_reward.PNG" >
+</p>
+<p align="center">
+  <small> sum of weighted rewards </small>
+</p>
+  
+Since PPO is an online-policy that collects trajectories for some arbitrary period, the weighted rewards can be computed immediately after bootstrapping. In fact, this can be seen in the algorithm for PPO shown above. 
+
+
+
+
+If you are unfamiliar with the actor-critic architecture, please view the notebook on Deep Deterministic Policy Gradient elsewhere in this github.
+
+Please refer to the code for a detailed explanation. 
+
+
 
 
