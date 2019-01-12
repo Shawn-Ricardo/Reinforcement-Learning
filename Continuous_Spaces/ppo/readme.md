@@ -76,7 +76,7 @@ In essence, clipping the objective function limits the probability ratio, *r (wh
 The following is a graphical representation of the constrained values of the probability ratio,
 
 <p align="center">
-<img src="images/ppo_bounded.png" width="520" height="260">
+<img src="images/ppo_bounded.png" width="620" height="180">
 </p>
 
 
