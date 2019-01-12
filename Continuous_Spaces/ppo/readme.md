@@ -1,2 +1,6 @@
-# <p align="center"><b>Proximal Proxy Optimization</b></p>
+# <p align="center">
+  <b>
+    Proximal Proxy Optimization
+  </b>
+</p>
 
