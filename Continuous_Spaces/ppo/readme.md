@@ -13,7 +13,7 @@ PPO is an on-line method. One of the salient details of on-line learning involve
 The highlighted region of the PPO algorithm showcases this bootstrapping,
 
 <p align="center">
-<img src="images/ppo_bootstrap.PNG" width="640" height="480">
+<img src="images/ppo_bootstrap.PNG" width="320" height="240">
 </p>
 
 
