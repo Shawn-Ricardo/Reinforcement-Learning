@@ -21,7 +21,7 @@ The highlighted region of the PPO algorithm showcases this bootstrapping...
 The paper begins by discussing a common gradient estimator and it's corresponding objective function. The objective function is given as,
 
 <p align="center">
-<img src="images/ppo_obj_fn.PNG" width="520" height="240">
+<img src="images/ppo_obj_fn.PNG" >
 </p>
 
 This formula corresponds to equation (2) in paper and defines it as the expectation over the log of the stochastic action policy multiplied by an *estimate* of the advantage function output, A_hat. 
