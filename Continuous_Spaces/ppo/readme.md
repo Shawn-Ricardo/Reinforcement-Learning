@@ -80,7 +80,10 @@ The following is a graphical representation of the constrained values of the pro
 </p>
 
 
+### <p align="center"><b><i>Final Objective Function</i></b></p>
 
-
+<p align="center">
+<img src="images/ppo_final_obj_fn.png">
+</p>
 
 
