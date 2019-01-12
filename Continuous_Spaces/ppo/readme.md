@@ -45,11 +45,11 @@ The advantage function (A_hat) in the equation above is the difference between a
   <sup> sum of weighted rewards </sup>
 </p>
 
-Since PPO is an online-policy that collects trajectories for some arbitrary period, the weighted rewards can be computed immediately after bootstrapping. In fact, this can be seen in the algorithm for PPO shown above, stated as "Compute Advantage Estimates".
+Since PPO is an online-policy that collects trajectories for some arbitrary period, the weighted rewards can be computed immediately after bootstrapping. In fact, this can be seen in the algorithm for PPO shown above, stated as "Compute Advantage Estimates". 
 
+Note that the calculation of the weighted sum of rewards has no bias because these are the actual, true values. However, there is a significant amount of variance in these values, especially early on, as trajectories/epsiodes can take on drastically disparate sequence of actions. This behavior is similar to that seen in a typically Monte Carlo approach.  
 
-
-
+### <p align="center"><b><i>Dealing With Noise</i></b></p>
 
 
 
