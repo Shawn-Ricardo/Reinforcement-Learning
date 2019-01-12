@@ -83,7 +83,7 @@ The following is a graphical representation of the constrained values of the pro
 ### <p align="center"><b><i>Final Objective Function</i></b></p>
 
 <p align="center">
-<img src="images/ppo_final_obj_fn.png">
+<img src="images/ppo_final_obj_fn.PNG">
 </p>
 
 
