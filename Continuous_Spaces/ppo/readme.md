@@ -95,3 +95,17 @@ The third term introduces an entropy bonus into the system that ensures the agen
 
 
 ### <p align="center"><b><i>Application & Results</i></b></p>
+
+The PPO algorithm was used to train an agent to control a creature with 4 arms and 4 forearms within a Unity Machine-Learning Agent Environment. 
+
+The observation space is continuous and is a variable of size 117, corresponding to position, rotation, velocity, and angular velocities of each limb plus the acceleration and angular acceleration of the body. The action space is continuous and is a vector of size 20, corresponding to target rotations for joints.
+
+The agent is to move toward the goal for as long as possible by setting target rotations for each joint such that the agent faces toward the goal *and* moves toward the goal. The agent receives a +0.03 times body velocity and +0.01 times body direction alignment, respectively.
+
+The environment is considered solved when the agent receives an average score of 400. For a more detailed explanation of the environment, see the corresponding jupyter notebook. The Unity Environment can be downloaded [here](https://github.com/udacity/deep-reinforcement-learning/tree/master/p2_continuous-control).
+
+The following video showcases a successful agent controlling each limb to advance itself forward for an extended period of time.
+
+<p align="center">
+    <img width="580" height="380" src="images/crawler.gif" />
+ </p>
