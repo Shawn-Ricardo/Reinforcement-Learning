@@ -104,7 +104,7 @@ The agent is to move toward the goal for as long as possible by setting target r
 
 The environment is considered solved when the agent receives an average score of 400. For a more detailed explanation of the environment, see the corresponding jupyter notebook. The Unity Environment can be downloaded [here](https://github.com/udacity/deep-reinforcement-learning/tree/master/p2_continuous-control).
 
-The following video showcases a successful agent controlling each limb to advance itself forward for an extended period of time.
+The following video showcases an agent successfully controlling each limb to advance itself forward for an extended period of time. The average score here was 400.
 
 <p align="center">
     <img width="580" height="380" src="images/crawler.gif" />
