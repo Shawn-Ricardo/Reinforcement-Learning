@@ -53,3 +53,16 @@ The above reinforcement learning algorithms either deal with discrete state/acti
 
 
 In, "Continuous Control With Deep Reinforcement Learning (2016)", Lillicrap, et al., adapt the Deep Q-Network to the continous action domain using an actor-critic, model-free algorithm based on the deterministic policy gradient that can operate over continous action spaces. DDPG is used to train an agent to manipulate a double jointed arm in order to place the joint's end point at a moving target location in space.
+
+<p align="center">
+  <i> Proximal Policy Optimization (PPO) </i>
+</p>
+
+In 2017, engineers at OpenAI developed a policy-based algorithm that operates within continuous observation and action spaces. The main crux of PPO is its simplicity, low hyper-parameter utilization, and generalization capability. In fact, OpenAI has deemed PPO as the [default reinforcement learning algorithm](https://blog.openai.com/openai-baselines-ppo/) for these very reasons and has deployed a version of the PPO algorithm that is [capable of defeating amateur Dota 2 teams](https://blog.openai.com/openai-five/). In this notebook, PPO is used to train an agent to crawl on the [Unity Crawler Environment](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md).
+
+
+<p align="center">
+  <b> Multi-Agent </b>
+</p>
+
+work in progress...
