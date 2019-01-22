@@ -12,4 +12,4 @@ Mnih, Volodymyr, et al. fuse a Deep Neural Network into the Q-Learning approach 
 
 The following notebook, inspired by the above paper, implements a Deep Q-Network on OpenAI Gym's Lunar Lander, which successfully trains an agent to land the space ship within the desired goal region.
 
-![](images/lunar_lander.gif)
+<p align="center"> <img src="images/lunar_lander.gif"></p>
