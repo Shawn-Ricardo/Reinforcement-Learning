@@ -14,6 +14,11 @@ SARSA algorithms are based on Markov Decision Processes, which operate on a assu
 
 ## <p align="center"><b> Deep Q Network </b></p>
 
+<p align="center">
+  <i> Double DQN (DDQN) </i>
+</p>
+
+
 Another alternative to dealing with continous state spaces is to use a deep neural network to approximate the Q-Table, which is the optimal action-value function of an agent acting in an environment. This notebook implements a Deep Q-Network to solve OpenAI Gym's Lundar Lander environment by using a neural network in-place of a Q-Table. 
 
 This approach is inspired by the work of Mnih, Volodomryh, et al. (2015) in "Human-Level Control Through Deep Reinforcement Learning". In which the authors trained a agent to play Atari video games much better than professional game testers.
