@@ -15,7 +15,7 @@ SARSA algorithms are based on Markov Decision Processes, which operate on a assu
 ## <p align="center"><b> Deep Q Network </b></p>
 
 <p align="center">
-  <i> Double DQN (DDQN) </i>
+  <i> DQN </i>
 </p>
 
 
