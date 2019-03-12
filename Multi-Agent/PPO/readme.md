@@ -25,8 +25,3 @@ Please view the notebook to see the plot of average rewards over episodes. As ca
 <p align="center">
     <img width="580" height="380" src="images/tennis_play.gif" />
  </p>
-
-
-### <p align="center"><b><i>Future Work </i></b></p>
-
-As stated above, this environment is collaborative which affords certain characteristics that are conducive of the PPO algorithm. Future work includes an adversarial, zero-sum game. There are many approaches to attempting these types of environments, including the [Multi-Agent Deep Deterministic Policy Gradient](https://arxiv.org/abs/1706.02275) approach, which showed very promising results.
