@@ -1,4 +1,4 @@
-# <p align="center"><b>PPO For Tennis</b></p>
+## <p align="center"><b>PPO For Tennis</b></p>
 
 This notebook applies the PPO algorithm to the Unity [Tennis environment](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md). 
 
