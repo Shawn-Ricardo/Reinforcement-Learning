@@ -14,7 +14,9 @@ Since the agents are NOT adversarial, the reward structure for each agent is ide
 
 The environment is considered solved when the average score over 100 consecutive episodes is greater than or equal to +0.5.
 
-The environment can be downloaded [here](https://github.com/udacity/deep-reinforcement-learning/tree/master/p3_collab-compet).
+The environment can be downloaded [here](https://github.com/udacity/deep-reinforcement-learning/tree/master/p3_collab-compet).Make sure it is in the same directory as the jupyter notebook.
+
+To run, tell the kernel to "Restart and Clear Output". Then, run each cell from top to bottom. The necessary packages other than the unity environment are imported. If you do not have the necessary packages, please import those listed.
 
 ### <p align="center"><b><i>Results</i></b></p>
 
