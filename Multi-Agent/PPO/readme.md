@@ -18,8 +18,8 @@ The environment can be downloaded [here](https://github.com/udacity/deep-reinfor
 
 ### <p align="center"><b><i>Results</i></b></p>
 
-As can be seen from the graph of rewards, the agents were able to successfully learn the environment and achieve an average score of +0.5 over 100 consecutive episodes!
+Please view the notebook to see the plot of average rewards over episodes. As can be seen from the video below, the agents are able to successfully "solve" the environment and play tennis with each other!
 
 <p align="center">
-    <img width="580" height="380" src="images/reward_obtained.PNG" />
+    <img width="580" height="380" src="images/tennis_play.gif" />
  </p>
