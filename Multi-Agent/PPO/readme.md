@@ -2,7 +2,7 @@
 
 This notebook applies the PPO algorithm to the Unity [Tennis environment](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md). 
 
-The PPO algorithm is discussed in depth elsewhere in this GitHub. Please refer to that notebook to familiarize yourself with the concepts of PPO.
+The PPO algorithm is discussed in depth elsewhere in this GitHub. Please refer to that [notebook](https://github.com/Shawn-Ricardo/Reinforcement-Learning/tree/master/Continuous_Spaces/ppo) to familiarize yourself with the concepts of PPO.
 
 This environment is a collaboration between two agents. That is, both agents must work together to achieve a goal, which is to keep the ball in play as long as possible.
 
