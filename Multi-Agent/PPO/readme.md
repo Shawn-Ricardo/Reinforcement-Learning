@@ -19,3 +19,7 @@ The environment can be downloaded [here](https://github.com/udacity/deep-reinfor
 ### <p align="center"><b><i>Results</i></b></p>
 
 As can be seen from the graph of rewards, the agents were able to successfully learn the environment and achieve an average score of +0.5 over 100 consecutive episodes!
+
+<p align="center">
+    <img width="580" height="380" src="images/reward_obtained.PNG" />
+ </p>
