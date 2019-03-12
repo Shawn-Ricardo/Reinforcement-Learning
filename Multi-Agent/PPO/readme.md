@@ -1,4 +1,4 @@
-### <p align="center"><b>PPO For Tennis</b></p>
+# <p align="center"><b>PPO For Tennis</b></p>
 
 ### <p align="center"><b><i>Application </i></b></p>
 
@@ -16,7 +16,5 @@ The environment is considered solved when the average score over 100 consecutive
 
 The environment can be downloaded [here](https://github.com/udacity/deep-reinforcement-learning/tree/master/p3_collab-compet).
 
-<p align="center">
-  <sup> Results </sup>
-</p>
+### <p align="center"><b><i>Results</i></b></p>
 
