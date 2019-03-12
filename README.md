@@ -58,4 +58,4 @@ In 2017, engineers at OpenAI developed a policy-based algorithm that operates wi
 
 ## <p align="center"><b> Multi-Agent </b></p>
 
-work in progress...
+Apply the PPO algorithm to train two agents to play tennis with the goal of keeping the ball in play for as long as possible.
